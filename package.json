@@ -1,0 +1,19 @@
+{
+  "name": "mydiary",
+  "version": "1.0.0",
+  "description": "daily record keeping webapp made with RESTful routes and semantic UI",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irajeshegde/myDiary.git"
+  },
+  "author": "irajeshegde",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irajeshegde/myDiary/issues"
+  },
+  "homepage": "https://github.com/irajeshegde/myDiary#readme"
+}
