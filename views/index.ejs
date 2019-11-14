@@ -6,12 +6,17 @@
 			<%diary.find(function(mydiary){ %>
 			<div class="item">
 				<div class="content">
-					<a href="/diary/<%=mydiary._id%>" class="header"><%=mydiary.title%></a>	
+					<a href="/diary/<%=mydiary._id%>" class="header"><%=mydiary.title%></a>
 					<div class="meta">
-						<span><%=mydiary.created.toDateString()%></span>					
+						<span><%=mydiary.created.toDateString()%></span>
 					</div>
 					<div class="description">
-						<p><%-mydiary.body.substring(0,90)%>...</p>	
+						<% if (typeof mydiary.body == 'undefined' ) { %>
+							<p></p>
+						<% } else { %>
+							<p> <%=mydiary.body.substring(0, 90) %>...</p>
+						<% } %>
+<!--						<p>< %-mydiary.body.substring(0,90)% >...</p>-->
 					</div>			
 					<div class="extra">
 						<a  href="/diary/<%=mydiary._id%>" class="ui animated green basic button" tabindex="0">
