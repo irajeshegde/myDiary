@@ -3,4 +3,4 @@
 #### Commands to run
 - Install packages `$npm i`
 - Start mongoDB server  `$mongod`
-- Run `$node app.js``
+- Run `$node app.js`
